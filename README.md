@@ -3,6 +3,8 @@
 This repository supports an internal LLM-powered tool that converts natural language prompts into SQL queries. It includes an analytics pipeline to monitor usage patterns, track team-wise adoption, and extract actionable feedback to support internal product growth and commercialization.
 
 ---
+Please ensure that your service account credentials file is included before running the script, and make sure it also contains the PostgreSQL connection details.
+---
 
 ## 🔧 Key Features
 
