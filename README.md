@@ -1,2 +1,24 @@
-# Application-Usage-Pulse
-:Supported the internal rollout and commercialization strategy of a Streamlit-based NLP product by analyzing team-wise adoption, user feedback, and engagement metrics.
+# 💬 Application Usage Pulse
+
+This repository supports an internal LLM-powered tool that converts natural language prompts into SQL queries. It includes an analytics pipeline to monitor usage patterns, track team-wise adoption, and extract actionable feedback to support internal product growth and commercialization.
+
+---
+
+## 🔧 Key Features
+
+- 🔐 **Secure Access via Google Authenticator**  
+  Tracks authenticated usage of the Streamlit-based LLM tool with user-level metadata.
+
+- 📊 **Usage & Feedback Analytics**  
+  - Captures session data (user ID, prompt, timestamp, frequency)
+  - Logs sentiment and feedback via feedback forms and usage tags
+
+- ⚙️ **Automated Data Pipeline**  
+  - Stores logs in **AWS PostgreSQL**  
+  - Schedules extraction jobs via cron  
+  - ETL pipeline built in **Python**
+
+- 🧠 **Insightful Dashboard in Tableau**  
+  - Tracks usage trends by team  
+  - Shows top prompt types, session volume, sentiment over time  
+  - Highlights keywords from negative feedback using NLP preprocessing
